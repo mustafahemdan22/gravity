@@ -1,0 +1,200 @@
+.footer {
+    background-color: var(--color-surface);
+    transition: background-color var(--transition-base);
+}
+
+.mainFooter {
+    padding: 4rem 0;
+}
+
+.footerGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+}
+
+@media (min-width: 640px) {
+    .footerGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .footerGrid {
+        grid-template-columns: 1.5fr repeat(4, 1fr);
+        gap: 3rem;
+    }
+}
+
+.footerColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerLogo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    background: linear-gradient(135deg, var(--color-accent), #ff8a80);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+}
+
+.footerAbout {
+    color: var(--color-text-secondary);
+    font-size: 0.9375rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.socialLinks {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.socialLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: var(--radius-full);
+    background-color: var(--color-background);
+    color: var(--color-text);
+    transition: background-color var(--transition-fast), color var(--transition-fast), transform var(--transition-fast);
+}
+
+.socialLink:hover {
+    background-color: var(--color-accent);
+    color: white;
+    transform: translateY(-3px);
+}
+
+.columnTitle {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.linkList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.footerLink {
+    font-size: 0.9375rem;
+    color: var(--color-text-secondary);
+    transition: color var(--transition-fast), padding-left var(--transition-fast);
+}
+
+[dir="rtl"] .footerLink {
+    transition: color var(--transition-fast), padding-right var(--transition-fast);
+}
+
+.footerLink:hover {
+    color: var(--color-accent);
+    padding-left: 0.5rem;
+}
+
+[dir="rtl"] .footerLink:hover {
+    padding-left: 0;
+    padding-right: 0.5rem;
+}
+
+.newsletterText {
+    font-size: 0.9375rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 1rem;
+}
+
+.newsletterForm {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.newsletterInput {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-size: 0.9375rem;
+    outline: none;
+    transition: border-color var(--transition-fast);
+}
+
+.newsletterInput:focus {
+    border-color: var(--color-accent);
+}
+
+.newsletterInput::placeholder {
+    color: var(--color-text-muted);
+}
+
+.newsletterButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    border: none;
+    border-radius: var(--radius-lg);
+    background-color: var(--color-accent);
+    color: white;
+    cursor: pointer;
+    transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.newsletterButton:hover {
+    background-color: var(--color-accent-hover);
+    transform: scale(1.05);
+}
+
+.bottomBar {
+    border-top: 1px solid var(--color-border);
+    padding: 1.5rem 0;
+}
+
+.bottomContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+@media (min-width: 640px) {
+    .bottomContent {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+}
+
+[dir="rtl"] .bottomContent {
+    text-align: right;
+}
+
+.copyright {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+}
+
+.paymentMethods {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.paymentIcon {
+    font-size: 1.5rem;
+}

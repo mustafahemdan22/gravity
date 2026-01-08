@@ -1,0 +1,232 @@
+{
+    "nav": {
+        "home": "Home",
+        "shop": "Shop",
+        "categories": "Categories",
+        "about": "About",
+        "blog": "Blog",
+        "contact": "Contact",
+        "cart": "Cart",
+        "wishlist": "Wishlist",
+        "login": "Login",
+        "register": "Register",
+        "logout": "Logout",
+        "profile": "Profile"
+    },
+    "categories": {
+        "men": "Men",
+        "women": "Women",
+        "kids": "Kids",
+        "shoes": "Shoes",
+        "lingerie": "Lingerie",
+        "jeans": "Jeans",
+        "accessories": "Accessories",
+        "all": "All Categories"
+    },
+    "home": {
+        "hero": {
+            "title": "Discover Your Style",
+            "subtitle": "Explore the latest trends in fashion for Men, Women & Kids",
+            "cta": "Shop Now",
+            "secondary": "View Collections"
+        },
+        "categories": {
+            "title": "Shop by Category",
+            "subtitle": "Find everything you need"
+        },
+        "newArrivals": {
+            "title": "New Arrivals",
+            "subtitle": "Fresh styles just dropped"
+        },
+        "featured": {
+            "title": "Featured Products",
+            "subtitle": "Handpicked just for you"
+        },
+        "newsletter": {
+            "title": "Stay Updated",
+            "subtitle": "Subscribe to our newsletter for exclusive deals",
+            "placeholder": "Enter your email",
+            "button": "Subscribe",
+            "success": "Thank you for subscribing!"
+        },
+        "promotions": {
+            "title": "Special Offers",
+            "subtitle": "Don't miss out on these deals"
+        }
+    },
+    "shop": {
+        "title": "Shop",
+        "allProducts": "All Products",
+        "filters": "Filters",
+        "sort": "Sort By",
+        "sortOptions": {
+            "newest": "Newest",
+            "priceAsc": "Price: Low to High",
+            "priceDesc": "Price: High to Low",
+            "name": "Name A-Z"
+        },
+        "price": "Price",
+        "size": "Size",
+        "color": "Color",
+        "category": "Category",
+        "clearFilters": "Clear Filters",
+        "noProducts": "No products found",
+        "showing": "Showing",
+        "of": "of",
+        "products": "products"
+    },
+    "product": {
+        "addToCart": "Add to Cart",
+        "addToWishlist": "Add to Wishlist",
+        "removeFromWishlist": "Remove from Wishlist",
+        "viewDetails": "View Details",
+        "inStock": "In Stock",
+        "outOfStock": "Out of Stock",
+        "size": "Size",
+        "color": "Color",
+        "quantity": "Quantity",
+        "description": "Description",
+        "reviews": "Reviews",
+        "relatedProducts": "Related Products",
+        "selectSize": "Select Size",
+        "selectColor": "Select Color"
+    },
+    "cart": {
+        "title": "Shopping Cart",
+        "empty": "Your cart is empty",
+        "continueShopping": "Continue Shopping",
+        "subtotal": "Subtotal",
+        "shipping": "Shipping",
+        "total": "Total",
+        "checkout": "Proceed to Checkout",
+        "remove": "Remove",
+        "free": "Free"
+    },
+    "wishlist": {
+        "title": "My Wishlist",
+        "empty": "Your wishlist is empty",
+        "addedToCart": "Added to cart"
+    },
+    "checkout": {
+        "title": "Checkout",
+        "shipping": "Shipping Information",
+        "payment": "Payment Method",
+        "orderSummary": "Order Summary",
+        "placeOrder": "Place Order",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "email": "Email",
+        "phone": "Phone",
+        "address": "Address",
+        "city": "City",
+        "country": "Country",
+        "zip": "ZIP Code"
+    },
+    "auth": {
+        "login": {
+            "title": "Welcome Back",
+            "subtitle": "Sign in to your account",
+            "email": "Email",
+            "password": "Password",
+            "remember": "Remember me",
+            "forgot": "Forgot password?",
+            "button": "Sign In",
+            "noAccount": "Don't have an account?",
+            "register": "Create one"
+        },
+        "register": {
+            "title": "Create Account",
+            "subtitle": "Join us today",
+            "firstName": "First Name",
+            "lastName": "Last Name",
+            "email": "Email",
+            "password": "Password",
+            "confirmPassword": "Confirm Password",
+            "terms": "I agree to the Terms & Conditions",
+            "button": "Create Account",
+            "hasAccount": "Already have an account?",
+            "login": "Sign in"
+        },
+        "errors": {
+            "required": "This field is required",
+            "email": "Please enter a valid email",
+            "password": "Password must be at least 8 characters",
+            "passwordMatch": "Passwords do not match"
+        }
+    },
+    "about": {
+        "title": "About Us",
+        "story": {
+            "title": "Our Story",
+            "content": "Founded with a passion for fashion, Gravity brings you the latest trends and timeless classics. We believe that great style should be accessible to everyone."
+        },
+        "mission": {
+            "title": "Our Mission",
+            "content": "To provide high-quality, fashionable apparel that empowers individuals to express their unique style."
+        },
+        "vision": {
+            "title": "Our Vision",
+            "content": "To become the go-to destination for fashion-forward individuals seeking quality and style."
+        },
+        "values": {
+            "title": "Our Values",
+            "quality": "Quality",
+            "qualityDesc": "We never compromise on quality",
+            "style": "Style",
+            "styleDesc": "Curated collections for every taste",
+            "service": "Service",
+            "serviceDesc": "Customer satisfaction is our priority"
+        }
+    },
+    "contact": {
+        "title": "Contact Us",
+        "subtitle": "We'd love to hear from you",
+        "form": {
+            "name": "Your Name",
+            "email": "Your Email",
+            "subject": "Subject",
+            "message": "Message",
+            "send": "Send Message",
+            "success": "Message sent successfully!"
+        },
+        "info": {
+            "address": "123 Fashion Street, Style City, SC 12345",
+            "email": "contact@gravity.com",
+            "phone": "+1 (555) 123-4567",
+            "hours": "Mon - Fri: 9:00 AM - 6:00 PM"
+        }
+    },
+    "blog": {
+        "title": "Blog",
+        "subtitle": "Fashion tips, trends & styling guides",
+        "readMore": "Read More",
+        "by": "By",
+        "on": "on"
+    },
+    "footer": {
+        "about": "About Gravity",
+        "aboutText": "Your one-stop destination for the latest fashion trends. Quality apparel for Men, Women & Kids.",
+        "quickLinks": "Quick Links",
+        "customerService": "Customer Service",
+        "shippingInfo": "Shipping Info",
+        "returns": "Returns & Exchanges",
+        "sizeGuide": "Size Guide",
+        "faq": "FAQ",
+        "followUs": "Follow Us",
+        "newsletter": "Newsletter",
+        "newsletterText": "Subscribe for exclusive offers",
+        "rights": "All rights reserved"
+    },
+    "common": {
+        "loading": "Loading...",
+        "error": "Something went wrong",
+        "back": "Back",
+        "next": "Next",
+        "previous": "Previous",
+        "close": "Close",
+        "save": "Save",
+        "cancel": "Cancel",
+        "search": "Search",
+        "searchPlaceholder": "Search products..."
+    }
+}

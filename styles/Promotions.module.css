@@ -1,0 +1,119 @@
+.section {
+    padding: 5rem 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.card {
+    position: relative;
+    border-radius: var(--radius-2xl);
+    overflow: hidden;
+    min-height: 350px;
+}
+
+@media (min-width: 768px) {
+    .card {
+        min-height: 400px;
+    }
+}
+
+.cardBackground {
+    position: absolute;
+    inset: 0;
+}
+
+.cardImage {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    transition: transform var(--transition-slow), opacity var(--transition-slow);
+}
+
+.card:hover .cardImage {
+    transform: scale(1.05);
+    opacity: 0.4;
+}
+
+.cardOverlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.4), transparent);
+}
+
+.cardContent {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    padding: 2rem;
+    color: white;
+}
+
+.subtitle {
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    opacity: 0.9;
+    margin-bottom: 0.5rem;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 0.75rem;
+}
+
+@media (min-width: 640px) {
+    .title {
+        font-size: 2.5rem;
+    }
+}
+
+.description {
+    font-size: 1rem;
+    opacity: 0.9;
+    margin-bottom: 1.5rem;
+    max-width: 300px;
+}
+
+.cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.875rem 1.5rem;
+    background-color: white;
+    color: var(--color-text);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    border-radius: var(--radius-full);
+    width: fit-content;
+    transition: gap var(--transition-fast), transform var(--transition-fast);
+}
+
+.cta:hover {
+    gap: 0.75rem;
+    transform: translateX(5px);
+}
+
+[dir="rtl"] .cta:hover {
+    transform: translateX(-5px);
+}
+
+[dir="rtl"] .cta svg {
+    transform: scaleX(-1);
+}

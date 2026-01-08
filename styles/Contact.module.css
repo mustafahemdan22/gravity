@@ -1,0 +1,188 @@
+.page {
+    min-height: 70vh;
+}
+
+.hero {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    text-align: center;
+    color: white;
+}
+
+.heroContent {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.heroTitle {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 0.75rem;
+}
+
+.heroSubtitle {
+    font-size: 1.125rem;
+    opacity: 0.9;
+}
+
+.section {
+    padding: 4rem 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+@media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.formContainer {
+    background-color: var(--color-surface);
+    padding: 2rem;
+    border-radius: var(--radius-xl);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.label {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.input,
+.textarea {
+    padding: 0.875rem 1rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-size: 1rem;
+    outline: none;
+    transition: border-color var(--transition-fast);
+    font-family: inherit;
+}
+
+.input:focus,
+.textarea:focus {
+    border-color: var(--color-accent);
+}
+
+.textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.submitButton {
+    padding: 1rem 2rem;
+    background-color: var(--color-accent);
+    border: none;
+    border-radius: var(--radius-lg);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color var(--transition-fast);
+}
+
+.submitButton:hover {
+    background-color: var(--color-accent-hover);
+}
+
+.successMessage {
+    text-align: center;
+    color: var(--color-success);
+    font-weight: 500;
+    margin-top: 0.5rem;
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.infoCards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.infoCard {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.25rem;
+    background-color: var(--color-surface);
+    border-radius: var(--radius-lg);
+    transition: transform var(--transition-fast);
+}
+
+.infoCard:hover {
+    transform: translateX(5px);
+}
+
+[dir="rtl"] .infoCard:hover {
+    transform: translateX(-5px);
+}
+
+.infoIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--color-accent);
+    color: white;
+    border-radius: var(--radius-lg);
+    flex-shrink: 0;
+}
+
+.infoTitle {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: 0.25rem;
+}
+
+.infoContent {
+    font-size: 0.9375rem;
+    color: var(--color-text-secondary);
+}
+
+.mapContainer {
+    flex: 1;
+    min-height: 250px;
+}
+
+.mapPlaceholder {
+    height: 100%;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-surface);
+    border-radius: var(--radius-xl);
+    color: var(--color-text-muted);
+}
+
+.mapPlaceholder span {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
