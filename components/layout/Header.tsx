@@ -1,13 +1,13 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import Link from 'next/link';
-import { motion, AnimatePresence } from 'framer-motion';
-import { useCart } from '@/context/CartContext';
-import { useWishlist } from '@/context/WishlistContext';
-import { useTheme } from '@/context/ThemeContext';
-import { useLocale } from '@/context/LocaleContext';
-import styles from '@/styles/Header.module.css';
+import React, { useState } from "react";
+import Link from "next/link";
+import { motion, AnimatePresence } from "framer-motion";
+import { useCart } from "@/context/CartContext";
+import { useWishlist } from "@/context/WishlistContext";
+import { useTheme } from "@/context/ThemeContext";
+import { useLocale } from "@/context/LocaleContext";
+import styles from "@/styles/Header.module.css";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,23 +21,19 @@ export default function Header() {
   const { locale, toggleLocale, t, isRTL } = useLocale();
 
   const navLinks = [
-    { href: '/', label: t.nav.home },
-    { href: '/about', label: t.nav.about },
-    { href: '/blog', label: t.nav.blog },
-    { href: '/contact', label: t.nav.contact },
+    { href: "/", label: t.nav.home },
+    { href: "/about", label: t.nav.about },
+    { href: "/blog", label: t.nav.blog },
+    { href: "/contact", label: t.nav.contact },
   ];
 
   const productCategories = [
-    { href: '/category/men', label: t.categories.men },
-    { href: '/category/women', label: t.categories.women },
-    { href: '/category/kids', label: t.categories.kids },
-        { href: '/category/Accessories', label: t.categories.accessories },
-           { href: '/category/Lingerie', label: t.categories.lingerie },
-                      { href: '/category/shoes', label: t.categories.shoes },
-
-
-
-
+    { href: "/category/men", label: t.categories.men },
+    { href: "/category/women", label: t.categories.women },
+    { href: "/category/kids", label: t.categories.kids },
+    { href: "/category/Accessories", label: t.categories.accessories },
+    { href: "/category/Lingerie", label: t.categories.lingerie },
+    { href: "/category/shoes", label: t.categories.shoes },
   ];
 
   return (
@@ -45,9 +41,9 @@ export default function Header() {
       {/* Top Bar */}
       <div className={styles.topBar}>
         <p className={styles.announcement}>
-          {locale === 'en'
-            ? '🎉 Free Shipping on Orders Over $100!'
-            : '🎉 شحن مجاني للطلبات فوق 100 دولار!'}
+          {locale === "en"
+            ? "🎉 Free Shipping on Orders Over $100!"
+            : "🎉 شحن مجاني للطلبات فوق 100 دولار!"}
         </p>
       </div>
 
@@ -75,7 +71,7 @@ export default function Header() {
                 onMouseLeave={() => setIsProductsOpen(false)}
               >
                 <Link href="/shop" className={styles.navLink}>
-                  {t.nav.products}  Categories▾
+                  {t.nav.products} ▾
                 </Link>
 
                 <AnimatePresence>
@@ -88,10 +84,12 @@ export default function Header() {
                     >
                       {productCategories.map((item) => (
                         <li key={item.href}>
-                          <Link href={item.href} className={styles.dropdownLink}>
+                          <Link
+                            href={item.href}
+                            className={styles.dropdownLink}
+                          >
                             {item.label}
                           </Link>
-                          
                         </li>
                       ))}
                     </motion.ul>
@@ -105,13 +103,13 @@ export default function Header() {
               {/* Language */}
               <button className={styles.iconButton} onClick={toggleLocale}>
                 <span className={styles.langText}>
-                  {locale === 'en' ? 'AR' : 'EN'}
+                  {locale === "en" ? "AR" : "EN"}
                 </span>
               </button>
 
               {/* Theme */}
               <button className={styles.iconButton} onClick={toggleTheme}>
-                {resolvedTheme === 'dark' ? '☀️' : '🌙'}
+                {resolvedTheme === "dark" ? "☀️" : "🌙"}
               </button>
 
               {/* Desktop Only Icons */}
@@ -158,16 +156,22 @@ export default function Header() {
           {isMenuOpen && (
             <motion.div
               initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: 'auto' }}
+              animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
               className={styles.mobileMenu}
             >
               {/* Mobile Actions */}
               <div className={styles.mobileActions}>
                 <button className={styles.iconButton}>🔍</button>
-                <Link href="/wishlist" className={styles.iconButton}>❤️</Link>
-                <Link href="/cart" className={styles.iconButton}>🛒</Link>
-                <Link href="/login" className={styles.iconButton}>👤</Link>
+                <Link href="/wishlist" className={styles.iconButton}>
+                  ❤️
+                </Link>
+                <Link href="/cart" className={styles.iconButton}>
+                  🛒
+                </Link>
+                <Link href="/login" className={styles.iconButton}>
+                  👤
+                </Link>
               </div>
 
               <ul className={styles.mobileNavLinks}>
@@ -187,16 +191,14 @@ export default function Header() {
                 <li className={styles.mobileProductsGroup}>
                   <button
                     className={styles.mobileCategoryToggle}
-                    onClick={() =>
-                      setIsMobileCategoriesOpen((prev) => !prev)
-                    }
+                    onClick={() => setIsMobileCategoriesOpen((prev) => !prev)}
                   >
                     <span>{t.nav.products}</span>
                     <motion.span
                       animate={{ rotate: isMobileCategoriesOpen ? 360 : 0 }}
                       transition={{ duration: 0.45 }}
                     >
-                       Categories▾
+                     ▾
                     </motion.span>
                   </button>
 
@@ -204,7 +206,7 @@ export default function Header() {
                     {isMobileCategoriesOpen && (
                       <motion.div
                         initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: 'auto', opacity: 1 }}
+                        animate={{ height: "auto", opacity: 1 }}
                         exit={{ height: 0, opacity: 0 }}
                       >
                         {productCategories.map((item) => (

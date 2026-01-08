@@ -1,19 +1,20 @@
 {
  "nav": {
-    "home": "الرئيسية",
-    "shop": "المتجر",
-    "products": "المنتجات",
-    "categories": "الأقسام",
-    "about": "من نحن",
-    "blog": "المدونة",
-    "contact": "اتصل بنا",
-    "cart": "السلة",
-    "wishlist": "المفضلة",
-    "login": "تسجيل الدخول",
-    "register": "إنشاء حساب",
-    "logout": "تسجيل الخروج",
-    "profile": "الملف الشخصي"
+    "home": "Home",
+    "shop": "Shop",
+    "products": "Products",
+    "categories": "Categories",
+    "about": "About",
+    "blog": "Blog",
+    "contact": "Contact",
+    "cart": "Cart",
+    "wishlist": "Wishlist",
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "profile": "Profile"
 }
+
 
 ,
     "categories": {
